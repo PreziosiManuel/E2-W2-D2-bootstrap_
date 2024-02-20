@@ -71,16 +71,26 @@
         <button type="button" class="btn btn-info text-white w-50">Prenota ora</button>
       </div>
     </div>
-    <!-- INIZIO CARD -->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Saldi</h2>
-          <p class="text-info">Nascondi sezione</p>
-        </div>
 
+    <!-- INIZIO CARD -->
+    <div class="container d-flex justify-content-between align-items-center">
+      <h2>Saldi</h2>
+      <button
+        type="button"
+        class="btn text-info"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseWidthExample"
+        aria-expanded="true"
+        aria-controls="collapseWidthExample"
+      >
+        Nascondi/Mostra sezione
+      </button>
+    </div>
+
+    <div class="container mt-5 collapse multi-collapse" id="collapseWidthExample">
+      <div class="row">
         <!-- ============INIZIO CARD============== -->
-        <div class="col-6 col-md-4 my-2">
+        <div class="col-6 col-md-4 col-xl-3 gy-2" id="collapseWidthExample">
           <div class="card">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -98,7 +108,7 @@
         </div>
         <!-- ===============FINE CARD================= -->
         <!-- ============INIZIO CARD============== -->
-        <div class="col-6 col-md-4 my-2">
+        <div class="col-6 col-md-4 col-xl-3 gy-2">
           <div class="card">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -116,7 +126,7 @@
         </div>
         <!-- ===============FINE CARD================= -->
         <!-- ============INIZIO CARD============== -->
-        <div class="col-6 col-md-4 my-2">
+        <div class="col-6 col-md-4 col-xl-3 gy-2">
           <div class="card">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -134,7 +144,7 @@
         </div>
         <!-- ===============FINE CARD================= -->
         <!-- ============INIZIO CARD============== -->
-        <div class="col-6 d-md-none my-2">
+        <div class="col-6 d-md-none d-xl-block col-xl-3 gy-2">
           <div class="card">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -155,14 +165,23 @@
     </div>
     <!-- ================ INIZIO PARTE 2 =================== -->
     <!-- INIZIO CARD -->
-    <div class="container mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h2>Welcome Summer</h2>
+      <button
+        type="button"
+        class="btn text-info"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseWidthExample2"
+        aria-expanded="false"
+        aria-controls="collapseWidthExample2"
+      >
+        Nascondi/Mostra sezione
+      </button>
+    </div>
+    <div class="container mt-5 gy-2 collapse collapse-vertical" id="collapseWidthExample2">
       <div class="row">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Welcome Summer</h2>
-          <p class="text-info">Nascondi sezione</p>
-        </div>
         <!-- ============INIZIO CARD============== -->
-        <div class="col-6 my-2">
+        <div class="col-6 gy-2">
           <div class="card">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -180,7 +199,7 @@
         </div>
         <!-- ===============FINE CARD================= -->
         <!-- ============INIZIO CARD============== -->
-        <div class="col-6 my-2">
+        <div class="col-6 gy-2">
           <div class="card">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -198,7 +217,7 @@
         </div>
         <!-- ===============FINE CARD================= -->
         <!-- ============INIZIO CARD============== -->
-        <div class="col-6 my-2">
+        <div class="col-6 gy-2">
           <div class="card">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -216,7 +235,7 @@
         </div>
         <!-- ===============FINE CARD================= -->
         <!-- ============INIZIO CARD============== -->
-        <div class="col-6 my-2">
+        <div class="col-6 gy-2">
           <div class="card">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -234,7 +253,7 @@
         </div>
         <!-- ===============FINE CARD================= -->
         <!-- ============INIZIO CARD============== -->
-        <div class="col-6 my-2">
+        <div class="col-6 gy-2">
           <div class="card">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -252,7 +271,7 @@
         </div>
         <!-- ===============FINE CARD================= -->
         <!-- ============INIZIO CARD============== -->
-        <div class="col-6 my-2">
+        <div class="col-6 gy-2 mb-5">
           <div class="card">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -273,15 +292,15 @@
     </div>
     <!-- ===============FINE SECONDA PARTE ================= -->
     <!-- ===============INIZIO TERZA PARTE ================= -->
-    <div class="container mt-4">
+    <div class="container">
       <div class="row">
         <h2>Offerta del giorno</h2>
         <div class="col-6 col-xl-10">
           <img
-            class="rounded"
+            class="rounded object-fit-cover w-100"
             src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
             alt=""
-            style="width: 100%; object-fit: cover; max-height: 500px"
+            style="max-height: 500px"
           />
         </div>
         <div class="col-6 col-xl-2">
@@ -301,7 +320,7 @@
       <div class="row">
         <h2>Last Minute</h2>
         <!-- inizio immagine -->
-        <div class="col-6 mb-4 col-md-4">
+        <div class="col-6 mb-4 col-md-4 col-xl-2">
           <div class="">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -312,7 +331,7 @@
         </div>
         <!-- fine immagine -->
         <!-- inizio immagine -->
-        <div class="col-6 col-md-4 mb-4">
+        <div class="col-6 col-md-4 mb-4 col-xl-2">
           <div class="">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -323,7 +342,7 @@
         </div>
         <!-- fine immagine -->
         <!-- inizio immagine -->
-        <div class="col-6 col-md-4 mb-4">
+        <div class="col-6 col-md-4 mb-4 col-xl-2">
           <div class="">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -334,7 +353,7 @@
         </div>
         <!-- fine immagine -->
         <!-- inizio immagine -->
-        <div class="col-6 col-md-4 mb-4">
+        <div class="col-6 col-md-4 mb-4 col-xl-2">
           <div class="">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -345,7 +364,7 @@
         </div>
         <!-- fine immagine -->
         <!-- inizio immagine -->
-        <div class="col-6 col-md-4 mb-4">
+        <div class="col-6 col-md-4 mb-4 col-xl-2">
           <div class="">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
@@ -356,7 +375,7 @@
         </div>
         <!-- fine immagine -->
         <!-- inizio immagine -->
-        <div class="col-6 col-md-4 mb-4">
+        <div class="col-6 col-md-4 mb-4 col-xl-2">
           <div class="">
             <img
               src="https://www.stile.it/wp-content/uploads/2018/10/iStock-527115069.jpg"
